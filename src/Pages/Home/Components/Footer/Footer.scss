@@ -27,6 +27,8 @@
 
   .col_1 {
     width: 285px;
+    padding-right: 15px;
+    padding-left: 15px;
     @media (max-width: 500px) {
       width: unset;
     }
@@ -64,6 +66,8 @@
   .col_2 {
     width: 285px;
     display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
     gap: 7px;
     @media (max-width: 500px) {
       width: unset;
