@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes , Route } from "react-router-dom"
 
-import HomePage from './Pages/Home/Home'
+import HomePage from './Pages/Home/HomePage'
 
 import "./App.scss"
 

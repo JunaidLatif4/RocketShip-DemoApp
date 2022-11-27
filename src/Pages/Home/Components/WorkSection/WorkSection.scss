@@ -1,0 +1,108 @@
+.work_section {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width:1050px) {
+        height: unset;
+        padding: 2rem;
+    }
+
+    .work_box {
+        margin: auto;
+        width: 1000px;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+
+        .heading {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .cards_box {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                align-items: center;
+                background-color: var(--Box_Background);
+                padding: 1.5rem .5rem;
+                border-radius: .5rem;
+
+                .number {
+                    font-size: 3rem;
+                    font-weight: bold;
+                }
+
+                .title {
+                    color: var(--Hover_Color);
+                    font-size: 1.3rem;
+                }
+
+                .img_box {
+                    height: 100px;
+
+                    img {
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .details {
+                    text-align: center;
+                    color: var(--Hover_Color);
+                    font-size: .85rem;
+                }
+            }
+        }
+
+        .btn_box {
+            width: -webkit-fill-available;
+            display: flex;
+            justify-content: center;
+
+            button {
+                background: var(--Btn_Background_Color);
+                padding: 1rem 4rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: var(--White_color);
+                border-radius: 2rem;
+                cursor: pointer;
+            }
+        }
+
+        @media only screen and (max-width:1050px) {
+            width: -webkit-fill-available;
+
+            .cards_box {
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+        }
+
+        @media only screen and (max-width:650px) {
+            .cards_box {
+                grid-template-columns: 1fr;
+
+            }
+
+            .btn_box {
+                button {
+                    padding: 1rem 2rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
