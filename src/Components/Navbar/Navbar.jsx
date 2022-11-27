@@ -50,18 +50,18 @@ const Navbar = () => {
       <>
         <div className="ham_nav_main">
           <AiOutlineClose
-            style={{ color: "black" }}
             className="icons"
             onClick={toggleDrawer(anchor, false)}
           />
           <div className="navbar__container">
             <div className="nav_right">
-              <div className="nav_text">Sign In</div>
-              <div className="nav_text">Create An Account</div>
-              <button className="rent_btn">Rent Or Sell Your Place</button>
-              <div className="language">
-                <AiOutlineArrowRight />
+              <div className="nav_text">FAQs</div>
+              <div className="nav_text">Rates</div>
+              <div className="nav_text">Contact</div>
+              <div className="sign_up">Sign Up</div>
+              <div className="log">
                 Login
+                <AiOutlineArrowRight className="icon" />
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@ const Navbar = () => {
             {["top"].map((anchor) => (
               <React.Fragment key={anchor}>
                 <MenuIcon
-                  style={{ color: "black" }}
+                  style={{ color: "white" }}
                   onClick={toggleDrawer(anchor, true)}
                 />
                 <Drawer

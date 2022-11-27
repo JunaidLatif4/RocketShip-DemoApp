@@ -144,32 +144,6 @@
                         font-weight: bold;
                     }
                 }
-
-                .language {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 138px;
-                    height: 32px;
-                    border: 1px solid #37322C;
-                    border-radius: 46px;
-                    font-family: 'Rubik';
-                    gap: 8.5px;
-                    cursor: pointer;
-
-                    @media(max-width:1350px) {
-                        width: 110px;
-                        font-size: 14px;
-
-                    }
-
-                    @media(max-width:850px) {
-                        display: none;
-
-
-                    }
-                }
-
             }
 
 
@@ -182,11 +156,17 @@
 
 .ham_nav_main {
     height: 100vh;
+    background-color: var(--BG_COLOR);
+    color: var(--White_Color);
+    display: flex;
+    flex-direction: column;
 
     .icons {
-        padding-left: 20px;
-        padding-top: 20px;
-        font-size: 25px;
+        font-size: 2rem;
+        cursor: pointer;
+        justify-self: end;
+        margin: 1rem;
+        align-self: flex-end;
         cursor: pointer;
     }
 
@@ -194,62 +174,46 @@
         .nav_right {
             padding-top: 100px;
             display: flex;
-            gap: 37px;
+            gap: 1rem;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             align-items: center;
 
-            .rent_btn {
-
-                width: 160px;
-                height: 48px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: #94C4BC;
-                border-radius: 34px;
-                border: none;
-                font-family: 'Rubik';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 24px;
-                color: white;
-                cursor: pointer;
-
-            }
-
-
-
             .nav_text {
-                font-family: 'Rubik';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 24px;
-                text-decoration-line: underline;
-                color: #2C2F37;
                 cursor: pointer;
 
+                &:hover {
+                    color: var(--Hover_Color);
+                }
 
+                @media(max-width:1350px) {
+                    font-size: 13px;
+                }
+            }
 
+            .sign_up {
+                color: var(--Orange_Color);
+                cursor: pointer;
             }
 
             .log {
-                background: #ff8d72;
-                background-image: -moz-linear-gradient(to bottom left, #ff8d72, #ff6491, #ff8d72);
-                background-image: linear-gradient(to bottom left, #ff8d72, #ff6491, #ff8d72);
-                background-size: 210% 210%;
-                background-position: top right;
-                background-color: #ff8d72;
-                transition: all 0.15s ease;
-                box-shadow: none;
-                color: #ffffff;
+                display: flex;
+                align-items: center;
+                gap: .4rem;
+                background: var(--Btn_Background_Color);
+                padding: .2rem 1rem;
+                border-radius: 1rem;
+                cursor: pointer;
 
+                .icon {
+                    font-weight: bold;
+                }
             }
-
-
 
         }
     }
