@@ -2,7 +2,7 @@ import React from "react";
 
 // Pics :
 
-import logo from "../../../../Assets/logo.png";
+import logo from "../../Assets/logo.png";
 
 // MUI :
 
@@ -23,6 +23,18 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 
 import { AiFillFacebook } from "react-icons/ai";
+
+
+// CSS :
+import "./Navbar.scss";
+
+
+
+
+
+// CSS :
+
+import "./Navbar.scss";
 
 // CSS :
 
