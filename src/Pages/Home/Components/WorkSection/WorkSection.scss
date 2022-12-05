@@ -1,5 +1,4 @@
 .work_section {
-    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -35,9 +34,11 @@
                 flex-direction: column;
                 gap: .5rem;
                 align-items: center;
-                background-color: var(--Box_Background);
+                background: #1f2251;
                 padding: 1.5rem .5rem;
                 border-radius: .5rem;
+                box-shadow: 0 1px 20px 0px rgb(0 0 0 / 10%);
+                font-family: 'Poppins';
 
                 .number {
                     font-size: 3rem;
@@ -46,11 +47,11 @@
 
                 .title {
                     color: var(--Hover_Color);
-                    font-size: 1.3rem;
+                    font-size: 2rem;
                 }
 
                 .img_box {
-                    height: 100px;
+                    height: 150px;
 
                     img {
                         height: 100%;
@@ -72,10 +73,13 @@
             justify-content: center;
 
             button {
-                background: var(--Btn_Background_Color);
+                background-color: #ff6491 !important;
+                background-image: linear-gradient(to bottom left, #ff8d72, #ff6491, #ff8d72) !important;
                 padding: 1rem 4rem;
-                font-size: 1.5rem;
-                font-weight: bold;
+                font-size: 20.8px;
+                border: none;
+                font-family: 'Poppins';
+                font-weight: 800;
                 color: var(--White_color);
                 border-radius: 2rem;
                 cursor: pointer;

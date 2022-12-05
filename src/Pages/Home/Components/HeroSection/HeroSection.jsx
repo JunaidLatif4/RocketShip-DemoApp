@@ -1,5 +1,8 @@
 import React from 'react'
 
+// Animations : 
+import 'animate.css';
+
 // ICONS | ASSETS :
 import HeroIMG from "../../../../Assets/hero.png"
 
@@ -14,9 +17,9 @@ const HeroSection = () => {
     return (
         <>
             <div className="hero_section">
-                <div className="left_animation_box"></div>
-                <div className="center_animation_box"></div>
-                <div className="right_animation_box"></div>
+                <div className="left_animation_box animate__animated animate__infinite animate__slow animate__shakeX "></div>
+                <div className="center_animation_box animate__animated animate__infinite animate__slow animate__shakeX "></div>
+                <div className="right_animation_box animate__animated animate__infinite animate__slow animate__shakeX "></div>
                 <div className="hero_box">
                     <div className="left_box">
                         <div className="heading">
@@ -37,7 +40,7 @@ const HeroSection = () => {
                             <button>Sign Up for FREE!</button>
                         </div>
                     </div>
-                    <div className="right_box">
+                    <div className="right_box animate__animated animate__infinite animate__slow animate__shakeY" >
                         <img src={HeroIMG} alt="" />
                     </div>
                 </div>
