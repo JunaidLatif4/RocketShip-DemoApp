@@ -6,12 +6,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Poppins';
 
     .left_animation_box,
     .center_animation_box,
     .right_animation_box {
         position: absolute;
-        animation: move-left-right 5s infinite;
+    
         border-radius: 2rem;
     }
 
@@ -21,16 +22,18 @@
         background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
         opacity: 0.1;
         left: -5%;
+        --animate-duration: 6s; 
         bottom: 0%;
     }
 
     .center_animation_box {
         background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
-        animation: move-left-right 3s infinite;
+     
         width: 300px;
         height: 300px;
         opacity: 0.1;
         left: 32%;
+        --animate-duration: 6s; 
         bottom: 29%;
     }
 
@@ -40,6 +43,7 @@
         background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
         right: -5%;
         bottom: 0%;
+        --animate-duration: 6s; 
         opacity: 0.1;
     }
 
@@ -75,10 +79,11 @@
             font-size: 5rem;
             font-weight: 600;
             line-height: 5rem;
-
+            font-family: 'Poppins';
             .sub_heading {
                 font-size: 1.5rem;
                 font-weight: normal;
+                font-family: 'Poppins';
                 color: var(--Hover_Color);
             }
         }
@@ -86,6 +91,7 @@
         .details {
             font-size: .9rem;
             color: var(--Hover_Color);
+            font-family: 'Poppins';
         }
 
         .btn_box {
@@ -93,10 +99,15 @@
 
             button {
                 padding: 1rem 3rem;
-                background: var(--Btn_Background_Color);
-                border-radius: 2rem;
                 color: var(--White_color);
-                font-weight: bold;
+                cursor: pointer;
+                background-color: #ff6491 !important;
+                background-image: linear-gradient(to bottom left, #ff8d72, #ff6491, #ff8d72) !important;
+                font-size: 14.8px;
+                border: none;
+                font-family: 'Poppins';
+                font-weight: 800;
+                border-radius: 2rem;
                 cursor: pointer;
             }
         }
@@ -117,15 +128,16 @@
         }
     }
 
+
     .right_box {
         width: -webkit-fill-available;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center;     
+        --animate-duration: 6s; 
 
         img {
-            width: 85%;
-            animation: move-up-down 5s infinite;
+            width: 100%;
             transition: 0.5s ease-out;
         }
 
